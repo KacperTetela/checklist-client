@@ -1,5 +1,5 @@
 console.log('hello');
-
+/*
 //window.alert(`i do really like a pizza`);
 
 //that is a command
@@ -41,6 +41,5 @@ fetch("http://localhost:8080/api/v1/checklists")
   })
   .catch(error => {
     console.error("Error fetching checklist:", error);
-  });
-
+  });*/
 

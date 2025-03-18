@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Checklist</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -24,12 +24,38 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p id="myP">Hello world! This is HTML5 Boilerplate.</p>
-  <script
-    src="js/app.js">
+<table id="dataTable">
+  <thead>
+  <tr>
+    <th>Room Number</th>
+    <th>Is Complete?</th>
+    <th>Signer</th>
+    <th>Comment</th>
+  </tr>
+  </thead>
+  <tbody>
+  <script>
+    for (let i = 1; i <= 5; i++) {
+      document.write(`
+                        <tr>
+                            <td><input type="text" name="roomNumber" placeholder="Room"></td>
+                            <td><input type="checkbox" name="isComplete"></td>
+                            <td><input type="text" name="signer" placeholder="Signer"></td>
+                            <td><input type="text" name="comment" placeholder="Comment"></td>
+                        </tr>
+                    `);
+    }
   </script>
+  </tbody>
+</table>
 
+<div class="buttons">
+  <button id="addRowButton">➕ Dodaj wiersz</button>
+  <button id="removeButton">➖ Usuń wiersz</button>
+  <button id="saveButton">💾 Zapisz</button>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
